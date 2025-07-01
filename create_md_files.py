@@ -25,7 +25,7 @@ def create_markdown_files():
         # 如果文件不存在才创建
         if not os.path.exists(filepath):
             with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(f"# 微观经济学 第{i}章 思维导图\n\n## {i}. 章节标题\n  - **待补充内容**\n\n## 小结\n  - **总结**：待补充\n")
+                f.write(f"# 微观经济学 第{i}章 思维导图\n\n## {i}. 章节标题\n  - 待补充内容\n\n## 小结\n  - 总结：待补充\n")
             print(f"✓ 创建文件: {filename}")
         else:
             print(f"- 文件已存在: {filename}")
